@@ -1,0 +1,563 @@
+/* ------------------------Background---------------------------*/
+body {
+    background-color: #fff;
+    background-image: url(image/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: 1900px 1020px;
+}
+
+
+/* --------------Mon nom--------------*/
+.myname {
+    margin-top: 380px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 5em;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: -40px;
+    color: #fff;
+}
+
+.dev {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 13px;
+    word-spacing: 20px;
+    text-align: center;
+    padding-bottom: 200px;
+    color: #fff;
+}
+
+
+/* --------------Barre de navigation--------------*/
+
+nav {
+    display: block;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav li {
+    float: left;
+    
+    
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; 
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+
+/* --------------Barre de séparation 1--------------*/
+.bar-container1 {
+    margin-top: 60px;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+}
+
+.bar-container1 .bar {
+    width: 1200px;
+    height: 10px;
+    border-radius: 20px;
+    box-shadow: inset 9.91px 9.91px 8px #dbe3f5, inset -9.91px -9.91px 8px #ffffff;
+}
+
+
+/* --------------Présentation--------------*/
+.titre-presentation {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    color: #163670;
+}
+
+.texte1 {
+    text-align: center;
+    color: #6d89cc;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+
+
+/* ------------------------Ma photo---------------------------*/
+.maphoto {
+    text-align: center;
+}
+
+.maphoto img {
+    z-index: 100;
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    
+}
+
+
+
+/* --------------Container Projects--------------*/
+
+.container_project {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/* --------------Bloc Projects--------------*/
+
+.bloc-project {
+    width: 1410px;
+    height: 300px;
+    border : 0.1em solid #fff;
+    border-radius: 40px;
+    background-color: linear-gradient(145deg, #EEF9FF, #B6BDCE);
+    box-shadow: 12.61px 12.61px 28px #B1B9C9, -12.61px -12.61px 28px #F3FDFF;
+}
+
+
+.bloc-project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 65px 90px -10px #3662e9;
+}
+
+
+/* ------------------------Project---------------------------*/
+.nom-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #163670;
+}
+
+.nom-project ul {
+    list-style-type: none;
+  }
+
+.nom-project a:link { 
+    text-decoration:none; 
+} 
+
+
+
+
+/* ------------------------Fin container Project---------------------------*/
+
+
+/* ------------------------Début des colonnes---------------------------*/
+
+.container {
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+/* ------------------------Colonne 1---------------------------*/
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* --------------Bloc Formations--------------*/
+.bloc-1 {
+    width: 600px;
+    height: 700px;
+    margin-bottom: 100px;
+    border : 0.1em solid #fff;
+    border-radius: 40px;
+    background-color: linear-gradient(145deg, #EEF9FF, #B6BDCE);
+    box-shadow: 12.61px 12.61px 28px #B1B9C9, -12.61px -12.61px 28px #F3FDFF;
+}
+
+.bloc-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 65px 90px -10px #3662e9;
+}
+
+
+
+
+/* --------------Texte : Formation et Expérience--------------*/
+.titre1 {
+    padding-top: 10px;
+    
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    color: #163670;
+    text-align: center;
+    
+    
+}
+
+.titre2 {
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #163670;
+}
+
+.titre3 {
+    margin-top: -15px;
+    margin-left: 50px;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: #1239ad;
+}
+
+.date {
+    margin-top: -15px;
+    margin-left: 50px;
+    margin-right: 30px;
+    font-family: 'PT Sans', sans-serif;
+    color: #1239ad;
+}
+
+.texte {
+    margin-left: 50px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #556ea7;
+}
+
+
+/* --------------Bloc Compétence--------------*/
+
+.container .bloc-2 {
+    width: 600px;
+    height: 800px;
+    border : 0.1em solid #fff;
+    border-radius: 40px;
+    display: block;
+    background-color: linear-gradient(145deg, #EEF9FF, #B6BDCE);
+    box-shadow: 12.61px 12.61px 28px #B1B9C9, -12.61px -12.61px 28px #F3FDFF;
+}
+
+.bloc-2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 65px 90px -10px #3662e9;
+}
+
+
+
+
+
+
+/* ------------------------Colonne 2---------------------------*/
+
+
+/* --------------Bloc Expérience--------------*/
+.container .bloc-3 {
+    width: 600px;
+    height: 910px;
+    margin-bottom: 100px;
+    border : 0.1em solid #fff;
+    border-radius: 40px;
+    display: block;
+    background-color: linear-gradient(145deg, #EEF9FF, #B6BDCE);
+    box-shadow: 12.61px 12.61px 28px #B1B9C9, -12.61px -12.61px 28px #F3FDFF;
+}
+
+.bloc-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 65px 90px -10px #3662e9;
+}
+
+
+/* --------------Expériences--------------*/
+
+/* ---------------------------------------*/
+
+
+
+/* --------------Compétences--------------*/
+.skill {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 40px;
+    position: relative;
+}
+
+
+
+.skill .name {
+    display: flex;
+    flex-direction: column;
+    color: #6d89cc;
+    font-size: 18px;
+    margin-right: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+}
+
+.skill .name span {
+    color: #163670;
+    margin: 10px 0;
+    
+    padding: 10px 20px;
+    text-align: center;
+
+}    
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bar {
+    width: 300px;
+    height: 15px;
+    border-radius: 20px;
+    box-shadow: inset 9.91px 9.91px 8px #dbe3f5, inset -9.91px -9.91px 8px #ffffff;
+}
+
+.bar .progress {
+    height: 100%;
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+    border-radius: 20px;
+}
+
+.bar:nth-child(1) .progress {
+    width: 100%;
+}
+
+.bar:nth-child(2) .progress {
+    width: 100%;
+}
+
+.bar:nth-child(3) .progress {
+    width: 20%;
+}
+
+.bar:nth-child(4) .progress {
+    width: 40%;
+}
+
+.bar:nth-child(5) .progress {
+    width: 30%;
+}
+
+.bar:nth-child(6) .progress {
+    width: 60%;
+}
+
+.bar:nth-child(7) .progress {
+    width: 80%;
+}
+
+.bar:nth-child(8) .progress {
+    width: 100%;
+}
+
+.bar:nth-child(9) .progress {
+    width: 40%;
+}
+
+
+
+/* --------------Bloc Loisirs--------------*/
+.bloc-4 {
+    width: 600px;
+    height: 590px; /* */
+    border : 0.1em solid #fff;
+    border-radius: 40px;
+    display: block;
+    background-color: linear-gradient(145deg, #EEF9FF, #B6BDCE);
+    box-shadow: 12.61px 12.61px 28px #B1B9C9, -12.61px -12.61px 28px #F3FDFF;
+}
+
+.bloc-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 65px 90px -10px #3662e9;
+}
+
+
+/* --------------Loisirs--------------*/
+.bloc-4 .loisir{
+    display: grid;
+    margin-top: 40px;
+    margin-left: 100px;
+    grid-template-columns:190px 190px;
+    grid-auto-rows: 200px;
+}
+
+
+
+.loisir ul {
+    display: flex;
+    justify-content: center;
+}
+
+.loisir li {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: #0077b6;
+    box-shadow: inset 9.91px 9.91px 15px #1239ad, inset -9.91px -9.91px 15px #00b4d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 162px;
+}
+
+.loisir i {
+    font-size: 35px;
+    
+}
+
+.loisir li:nth-child(1) i {
+    color: #fff;
+    
+}
+
+.loisir li:nth-child(2) i {
+    color: #fff;
+    
+}
+
+.loisir li:nth-child(3) i {
+    color: #fff;
+    
+}
+
+.loisir li:nth-child(4) i {
+    color: #fff;
+    
+}
+
+/* ------------------------Fin des colonnes---------------------------*/
+
+
+
+
+/* --------------Barre de séparation--------------*/
+.bar-container2 {
+    margin-top: 200px;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+}
+
+.bar-container2 .bar {
+    width: 1200px;
+    height: 10px;
+    border-radius: 20px;
+    box-shadow: inset 9.91px 9.91px 8px #163670, inset -9.91px -9.91px 8px #556ea7;
+}
+
+
+
+
+
+/* --------------Contacts--------------*/
+.contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    color: #003e7d;
+}
+
+
+.contact ul {
+    display: flex;
+    justify-content: center;
+}
+
+.contact li {
+    margin: 20px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 162px;
+    background: #003e7d;
+    
+}
+
+.contact li:hover {
+    transform: translateY(-3px);
+    box-shadow: inset 9.91px 9.91px 15px #1239ad, inset -9.91px -9.91px 15px #07295d;
+}
+
+.contact i {
+    font-size: 35px;
+    
+}
+
+.contact li:nth-child(1) i {
+    color: #fff;
+    
+}
+
+.contact li:nth-child(2) i {
+    color: #fff;
+}
+
+.contact li:nth-child(3) i {
+    color: #fff;
+    
+}
+
+.contact li:nth-child(4) i {
+    color: #fff;
+}
+
+
+
+
+
+/* ------------------------FINI !!! :D---------------------------*/
